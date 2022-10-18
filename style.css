@@ -115,7 +115,7 @@ body, html {
 }
 
 /*--------------------------------------------------------------
-# Services section
+# Booking-services section
 --------------------------------------------------------------*/
 .services{
     font-size: 16px;
@@ -163,17 +163,17 @@ body, html {
 }
 .booking-header{
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
-.booking-steps li{
-    font-size: 16px;
+.steps{
+    font-size: 20px;
+    color: rgb(241, 95, 34) ;
+    border-radius: 5rem;
 }
 
 @media (min-width: 768px){
-    .booking-header h2{
-        margin-bottom: 50px;
-    }
+
 
     .schedulebtn{
         font-size: 16px;

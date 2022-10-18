@@ -282,7 +282,6 @@ body, html {
     text-align: center;;
 }
 
-
 .FAQs{
     color: rgb(73, 80, 87);
 }
@@ -312,13 +311,26 @@ body, html {
     outline: 0;
 }
 
+
+
+
 .footer{
     background-color: rgb(63, 82, 97);;
 }
+
 .footer a{
     color: white;
-    font-size: 0.7rem;
+    font-size: 12px;
     line-height: 12pt;
+}
+
+.footer-left{
+    align-content: center;
+    height: 100%;
+}
+
+.footer-left a{
+    font-size: 22px;
 }
 
 

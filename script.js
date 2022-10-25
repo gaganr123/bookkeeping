@@ -1,19 +1,28 @@
+let navItem =document.getElementById("Mycheck");
+let navItem1 =document.querySelector("navbarSupportedContent");
 
 
-window.onscroll = function() {navColorChange()};
+window.onscroll = function () {
+  changeColor();
+  scrollFunction();
+};
 
-function navColorChange(){
-    // alert("this is alert")
+function changeColor() {
+  document.getElementById("navbar").style.backgroundColor = "#EE6600";
 
+  // document.querySelectorAll('#nav-link1,#nav-link2').style.color = "#fff";
+  if (window.scrollY == 0) {
+    changeColorto();
+  }
+  else{
+    navItem.addEventListener('mouseenter', check1 = () => { navItem.style.color = "#FFFFFF"});
+    navItem.addEventListener('mouseleave', check2 = () => { navItem.style.color = "#000000"});
+  }
+}
+function changeColorto() {
+  document.getElementById("navbar").style.cssText = 
+  "  backgroundColor: none;"
 
-    // if (window.pageYOffset >= sticky) {
-    //     navbar.classList.add("sticky")
-    //   } else {
-    //     navbar.classList.remove("sticky");
-    //   }
-    document.getElementById("navbar").style.backgroundColor = rgb(241, 95, 34);
-    if(screenTop = 0)
-    document.getElementById("navbar").style.backgroundColor = none;
 }
 
 

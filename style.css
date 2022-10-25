@@ -4,8 +4,11 @@ bg: rgb(248, 246, 244);
 color: rgb(73, 80, 87);
 */
 *{
+    /* color: rgb(73, 80, 87); */
     margin: 0;
     padding: 0;
+    font-weight:500;
+    color: black;
     font-family: LLCircularWeb, Helvetica Neue, Helvetica, Arial, Lucida Grande;
 }
 h2{
@@ -15,6 +18,11 @@ h2{
 
 h3{
     font-size: 20px;
+}
+
+p{
+    font-size: 16px;
+    font-family: LLCircularWeb;
 }
 
 body {
@@ -205,19 +213,47 @@ body, html {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
+
+.testimonial-text, .testimonial-footer{
+    color: rgb(47, 48, 52);
+    font-family: LLCircularWeb, serif;
+    font-size: 1rem;
+    line-height: 1.6875rem;
+    position: relative;
+    text-align: align;
+    padding: 0;
+    /* white-space: pre-wrap; */
+}
+
+.testimonial-text p{
+    padding: 0;
+    /* justify-content: center; */
+}
+
+.testimonial-footer, .col-md-8{
+    
+    height: 100%;
+    align-items: center;
+    padding-bottom: 20px;
+}
 .testimonial-pic{
     padding: 0;
-    height: auto;
-    width: 100px;
+    /* align-content: center; */
 }
 
 .testimonial-pic img{
-    height: 100%;
-    width: 100%;
-    border-radius: 100%;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
 }
 
-/*--------------------------------------------------------------
+.testimonial-pic-desc{
+    font-size: 11px;
+    margin: 0;
+    height: 100%;
+}
+
+/*------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
     @media only screen and (max-width > 768px) {

@@ -20,8 +20,7 @@ function changeColor() {
   }
 }
 function changeColorto() {
-  document.getElementById("navbar").style.cssText = 
-  "  backgroundColor: none;"
+  document.getElementById("navbar").style.cssText = "backgroundColor: none;"
 
 }
 

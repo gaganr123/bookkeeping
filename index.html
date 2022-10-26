@@ -21,10 +21,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-lg-0">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Services
                 </a>
-                <ul class="dropdown-menu shadow-lg" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu shadow-lg" aria-labelledby="services">
                   <li><a class="dropdown-item" href="#">Start a business</a></li>
                   <li><a class="dropdown-item" href="#">Find an ENI</a></li>
                   <li><hr class="dropdown-divider"></li>
@@ -38,10 +38,10 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="about" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   About
                 </a>
-                <ul class="dropdown-menu shadow-lg" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu shadow-lg" aria-labelledby="about">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><hr class="dropdown-divider"></li>
@@ -49,16 +49,16 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Pricing</a>
+                <a class="nav-link" aria-current="pricing" id="pricing" href="#">Pricing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="Mycheck" href="#">Partnership</a>
+                <a class="nav-link" id="partnership" href="#">Partnership</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">FAQs</a>
+                <a class="nav-link" id="faqs" href="#">FAQs</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" >Blog</a>
+                <a class="nav-link" id="blog" href="#" >Blog</a>
               </li>
             </ul>
          
@@ -140,6 +140,9 @@
             There is no reason to hire a full-time bookkeeper. 
             On a regular basis, our team of certified professionals will 
             send you precise and reliable financial and accounting reports.
+
+            <!-- just to maintain structure -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, voluptatem.
           </p>        
         </div>
       </div>
@@ -159,6 +162,8 @@
             Our experienced professional accountants can provide support designed for your 
             company or organization through data analysis and accurate consolidations to 
             aid you in making important business decisions.
+            <!-- just for structure -->
+            Lorem, ipsum.
           </p>     
         </div>
       </div>
@@ -196,14 +201,18 @@
 <div class="container booking">
   
   <div class="row">
-
-    <div class="col-md-4 image">
-      <img src="showSteps.webp" alt="">
-      <!-- <img src="https://1800accountant.com/_next/image?url=https%3A%2F%2Fmarketingprod.1800accountant.com%2Fwp-content%2Fuploads%2F2021%2F10%2F1800_Illustrations_Client-books.png&w=1200&q=75" alt=""> -->
+    <div class="col-md-4 image d-flex justify-content-center align-items-center">
+      <div>
+        <img src="showSteps.webp" height="350" width="auto" alt="">
+      </div>
     </div>
 
+    <!-- <div class="col-md-4 image">
+      <img src="showSteps.webp" alt="">
+    </div> -->
+
     <div class="col-md-8">
-      <div class= "booking-header">
+      <div class= "booking-header mx-0">
         <h2>  The simple way to do your books:</h2>
       </div>
       <div class="booking-steps">
@@ -248,7 +257,6 @@
           </div>
         </div>
         </div>
-      <button class="btn schedulebtn mx-auto">Schedult My Free Call</button>
     </div>
   </div>
 </div>
@@ -449,78 +457,125 @@
 
 
 <!-- ********************************
+              CTA
+******************************** -->
+<!-- <section class="section cta-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 me-auto text-center text-md-start mb-5 mb-md-0">
+        <h2>Starts Publishing Your Apps</h2>
+      </div>
+      <div class="col-md-5 text-center text-md-end">
+        <p>
+          <a href="#" class="btn d-inline-flex align-items-center">
+            <i class="bx bxl-apple"></i>
+            <span>App store</span>
+          </a> 
+          <a href="#" class="btn d-inline-flex align-items-center">
+            <i class="bx bxl-play-store"></i>
+            <span>Google play</span>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+
+
+
+<!-- ********************************
               FAQs
 ******************************** -->
-  <div class="container FAQs ">
-    <div class="faqHeading">
-      <h2>Frequently Asked Questions <br>
-      about Small Business Taxes</h2>
+  <div class="container FAQs mt-5">
+    <div class="row">
+
+      <!-- Faq headings  -->
+      <div class="faqHeading">
+        <h2>Frequently Asked Questions about Small Business Taxes</h2>
+      </div>
+      <div class="col-md-8 mt-4">
+        <div class="accordion " id="FAQs">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button "  data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                What can I expect after I sign up?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#FAQs">
+              <div class="accordion-body">
+                You will receive a welcome email with login instructions to your Client Portal. A bookkeeping appointment with an expert bookkeeper will be scheduled based on your availability. Typically, this is a next business day appointment and lasts between 15-30 minutes. The bookkeeper will ask questions and help you log into the portal if you have yet to do so.
+              </div>
+            </div>
+          </div>
+        
+          <!-- FAQs questions answers -->
+    
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                Will I be working with a local bookkeeper?
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#FAQs">
+              <div class="accordion-body">
+                If you opt for our dedicated bookkeeping service, you’ll be matched with a bookkeeper who is experienced in your industry and knowledgeable about the area where you operate.
+              </div>
+            </div>
+          </div> 
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                How are bookkeeping and accounting different?
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#FAQs">
+              <div class="accordion-body">
+                Bookkeeping and accounting serve separate and distinct functions in the running of a business. Bookkeeping is the function of documenting and maintaining records of transactions. Accounting is the act of analyzing and interpreting the documentation and turning it into meaningful data. While bookkeepers maintain the data needed to file your taxes, an accountant is likely the one who will prepare and file them.
+    
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseFour">
+                Can You Help if I'm Behind on My Books?
+              </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#FAQs">
+              <div class="accordion-body">
+                We offer catch-up bookkeeping as a service. No matter how far behind you are – even if you’re years behind – we can get you caught up quickly.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseFour">
+                What Kind of Bookkeeping Software Do You Use?
+              </button>
+            </h2>
+            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#FAQs">
+              <div class="accordion-body">
+                We use ClientBooks, our all-in-one administrative tool that makes running your business simpler. It’s bookkeeping software backed by professional bookkeepers with advanced features that keep you focused on growing your business. You won’t need any other software, but we are accustomed to working with any existing system you’ve been using.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+        <div class="col-md-4 image d-flex justify-content-center align-items-center">
+          <div>
+            <img src="faqs.jpg" height="350" width="auto" alt="">
+          </div>
+        </div>
     </div>
 
-    <div class="accordion " id="FAQs">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button "  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            What can I expect after I sign up?
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#FAQs">
-          <div class="accordion-body">
-            You will receive a welcome email with login instructions to your Client Portal. A bookkeeping appointment with an expert bookkeeper will be scheduled based on your availability. Typically, this is a next business day appointment and lasts between 15-30 minutes. The bookkeeper will ask questions and help you log into the portal if you have yet to do so.
-          </div>
-        </div>
-      </div>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Will I be working with a local bookkeeper?
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#FAQs">
-          <div class="accordion-body">
-            If you opt for our dedicated bookkeeping service, you’ll be matched with a bookkeeper who is experienced in your industry and knowledgeable about the area where you operate.
-          </div>
-        </div>
-      </div> 
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            How are bookkeeping and accounting different?
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#FAQs">
-          <div class="accordion-body">
-            Bookkeeping and accounting serve separate and distinct functions in the running of a business. Bookkeeping is the function of documenting and maintaining records of transactions. Accounting is the act of analyzing and interpreting the documentation and turning it into meaningful data. While bookkeepers maintain the data needed to file your taxes, an accountant is likely the one who will prepare and file them.
+   
 
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-            Can You Help if I'm Behind on My Books?
-          </button>
-        </h2>
-        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#FAQs">
-          <div class="accordion-body">
-            We offer catch-up bookkeeping as a service. No matter how far behind you are – even if you’re years behind – we can get you caught up quickly.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFour">
-            What Kind of Bookkeeping Software Do You Use?
-          </button>
-        </h2>
-        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#FAQs">
-          <div class="accordion-body">
-            We use ClientBooks, our all-in-one administrative tool that makes running your business simpler. It’s bookkeeping software backed by professional bookkeepers with advanced features that keep you focused on growing your business. You won’t need any other software, but we are accustomed to working with any existing system you’ve been using.
-          </div>
-        </div>
-      </div>
-    </div>
+   
   </div>
 
  
@@ -528,19 +583,38 @@
 
 
 
-  <div class="footer text-white" >
+  <div class="footer text-white"  >
 
     <div class="container-fluid pt-3">
       <div class="row">
 
         <div class="col-sm-12 col-md-3  footer-left">
           <h1>
-            <a href="#"><span class="Xpert">Xpert</span>Bookkeeping</a>
+            <a href="#" class="text-back"><span class="Xpert">Xpert</span>Bookkeeping</a>
           </h1>
         </div>
 
         <div class="col-sm-12 col-md-6 footer-middle">
           <div class="row">
+         
+            <div class="col-sm-4 col-md-4">
+              <div class="footer-header">
+                RESOURCES
+              </div>
+              <a href="">
+                <p>Pricing</p>
+              </a>
+              <a href="">
+                <p>Frequently Asked Questions</p>
+              </a>
+              <a href="">
+                <p>Audit Defense</p>
+              </a>
+              <a href="">
+                <p>Small business Taxes</p>
+              </a>           
+            </div>
+
             <div class="col-sm-4 col-md-4 ">
               <div class="footer-header">
                 SERVICES
@@ -563,33 +637,7 @@
               <a href="">
                 <p>Audit Defense</p>
               </a>
-              <a href="">
-                <p>Small business Taxes</p>
-              </a>
-            </div>
-            <div class="col-sm-4 col-md-4">
-              <div class="footer-header">
-                RESOURCES
-              </div>
-              <a href="">
-                <p>Pricing</p>
-              </a>
-              <a href="">
-                <p>Frequently Asked Questions</p>
-              </a>
-              <a href="">
-                <p>Audit Defense</p>
-              </a>
-
-              <!-- <div class="footer-header">
-                WORK WITH US
-              </div>
-              <a href="">
-                <p>Careers</p>
-              </a>
-              <a href="">
-                <p>Becoma an affilitate</p>
-              </a>  -->
+             
             </div>
             <div class="col-sm-4 col-md-4">
               <div class="footer-header">
@@ -660,7 +708,7 @@
 
   </div> <!-- end of footer -->
 
-  <script src="script.js"></script>
+  <script src="demo.js"></script>
 
   <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script> -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script> -->

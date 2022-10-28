@@ -13,8 +13,15 @@ window.onscroll = function () {
 
 function changeColor() {
     document.getElementById("navbar").style.backgroundColor = "#EE6600";
-    
+
     if (window.scrollY == 0) {
+        // $(function() {      
+        //     let isMobile = window.matchMedia("only screen and (max-width: 320px)").matches;
+        
+        //     if (isMobile) {
+        //         changeColorto();
+        //     }
+        //  });
         changeColorto();
     }
     else{

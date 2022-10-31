@@ -12,7 +12,7 @@ window.onscroll = function () {
 };
 
 function changeColor() {
-    document.getElementById("navbar").style.backgroundColor = "#EE6600";
+    document.getElementById("navbar").style.backgroundColor = "#F8C058";
 
     if (window.scrollY == 0) {
         // $(function() {      

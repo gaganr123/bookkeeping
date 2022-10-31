@@ -39,7 +39,7 @@ body {
     color: rgb(241, 95, 34);
 }
 .myHeader{
-    height: 100vh;
+    height: 104vh;
     width: auto;
     background-repeat: no-repeat;
     background-size: cover;
@@ -95,6 +95,25 @@ body, html {
     height: 100%;
 }
 
+.afternav{
+    background-color: rgb(248, 192, 88);
+    color: white;
+}
+.afternav p{
+    font-size: 20px;
+}
+
+.blink {
+    animation: blinker 1.5s linear infinite;
+    color: red;
+    font-family: sans-serif;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
 
 /*--------------------------------------------------------------
 # Certification section
@@ -105,10 +124,12 @@ body, html {
 
 }
 
+
 /*--------------------------------------------------------------
 # Booking-services section
 --------------------------------------------------------------*/
 .services{
+    background-color: rgb(248, 246, 244);
     font-size: 16px;
     line-height: 1.8;
     margin-bottom: 50px;

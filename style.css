@@ -52,7 +52,10 @@ body {
 }
 
 
-@media (min-width: 768px) {
+@media (max-width: 320px) {
+    .navbar{
+        background-color: rgb(248, 192, 88);
+    }
 
 }
 

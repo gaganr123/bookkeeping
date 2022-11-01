@@ -1,3 +1,5 @@
+let body = document.getElementById("navbar");
+
 let Xpert = document.querySelector('.Xpert')
 let services = document.getElementById("services");
 let about = document.getElementById("about");

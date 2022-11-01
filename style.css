@@ -43,7 +43,12 @@ body {
     width: auto;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(bookkeeping.png);
+}
+.myHeader-home{
+    background-image: url(imgs/bookkeeping.png);
+}
+.myHeader-bookkeeping{
+    /* background-image: url(imgs/dedicatedbookkeeping.png); */
 }
 
 .dropdown-item{
@@ -345,7 +350,7 @@ body, html {
 .footer{
     height:80vh;
     width: auto;
-    background-image: url(footer.png);
+    background-image: url(imgs/footer.png);
     background-repeat: no-repeat;
     background-size: cover;
 }

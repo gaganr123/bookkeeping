@@ -15,6 +15,8 @@ window.onscroll = function () {
 
 function changeColor() {
     document.getElementById("navbar").style.backgroundColor = "#FD7E14";
+    document.getElementById("navimg").src = "logochange.png";
+
 
     if (window.scrollY == 0) {
         // $(function() {      

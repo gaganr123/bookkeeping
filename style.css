@@ -39,7 +39,7 @@ body {
     color: rgb(241, 95, 34);
 }
 .myHeader{
-    height: 104vh;
+    height: 100vh;
     width: auto;
     background-repeat: no-repeat;
     background-size: cover;
@@ -104,11 +104,15 @@ body, html {
 }
 
 .afternav{
-    background-color: rgb(253, 126, 20);
-    color: white;
+    height: 100%;
+    display: flex;
+	align-items: flex-end;
+    /* background-color: rgb(253, 126, 20); */
 }
 .afternav p{
     font-size: 20px;
+    color: rgb(253, 126, 20);
+
 }
 
 .blink {
@@ -127,6 +131,7 @@ body, html {
 # Certification section
 --------------------------------------------------------------*/
 .certification{
+    margin: 40px 100px;
     font-size: 16px;
     line-height: 1.8;
 
@@ -264,49 +269,20 @@ body, html {
         font-weight: 500;
         text-align: center;
     }
+
+    .features h5{
+        margin-top: 10px;
+    }
+    .features .card{
+        border: none;
+    }
     
     .features .card-body{
+        background-color:  rgb(248, 246, 244);
         text-align: center;
-        padding: 40px 50px;
+        padding: 20px 30px;
     }
 
-
-/*--------------------------------------------------------------
-# CTA Section
---------------------------------------------------------------*/
-/* 
-.cta-section {
-    background: linear-gradient(to right, rgb(240, 122, 71) 0%, rgb(230, 192, 176) 100%);
-    color: rgb(241, 95, 34);
-    padding: 100px 0;
-  }
-  
-  .cta-section h2 {
-    color: #fff;
-    font-size: 3rem;
-    font-weight: 700;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .cta-section h2 {
-      font-size: 2rem;
-    }
-  }
-  
-  .cta-section .btn {
-    background: #e0c2b9;
-  }
-  
-  .cta-section .btn i {
-    margin-right: 5px;
-    font-size: 24px;
-    line-height: 0;
-  }
-
-  .cta-section .btn span:hover {
-    color: aliceblue;
-  }
-   */
 /*--------------------------------------------------------------
 # FAQs
 --------------------------------------------------------------*/
@@ -316,31 +292,40 @@ body, html {
 }
 
 .FAQs{
-    color: rgb(73, 80, 87);
+    /* color: rgb(73, 80, 87); */
 }
 
 .accordion-item{
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
+}
+.accordion-button{
+    color: rgb(253, 126, 20);
+    background-color: white;
+
 }
 
-.accordion-item, .accordion-button{
-    background-color: rgb(248, 246, 244);
-    font-size: 16px;
-    padding: 10px;
+.accordion-item{
+    /* background-color: rgb(248, 246, 244); */
+    /* font-size: 16px; */
+    /* color: rgb(253, 126, 20); */
+    /* padding: 10px; */
     line-height: 1.8;
-    border: 0;
+    background-color: rgb(248, 246, 244);
+
+    border: solid rgb(248, 246, 244) 1px;
+    
 }
 
 .accordion-button:not(.collapsed) {
     border-radius: 0;
-    color: rgb(73, 80, 87);
-    background-color: rgb(248, 246, 244);
+    color: rgb(253, 126, 20);
+    background-color: white;
     box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 }
 
 .accordion-button:focus {
     z-index: 0;
-    border-color: rgb(248, 246, 244);;
+    border-color: none;
     outline: 0;
 }
 

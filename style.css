@@ -253,7 +253,7 @@ body, html {
 --------------------------------------------------------------*/
     @media only screen and (max-width > 768px) {
         .features{
-            padding: 50px;
+            /* padding: 50px; */
         }
     }
 

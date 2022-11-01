@@ -14,7 +14,7 @@ window.onscroll = function () {
 };
 
 function changeColor() {
-    document.getElementById("navbar").style.backgroundColor = "#F8C058";
+    document.getElementById("navbar").style.backgroundColor = "#FD7E14";
 
     if (window.scrollY == 0) {
         // $(function() {      

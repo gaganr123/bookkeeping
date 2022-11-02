@@ -1,0 +1,9 @@
+.bookkeeping .row{
+    height: 100vh;
+    border: .1px solid rgb(189, 185, 185);
+}
+
+.bookkeeping .row .col-md-6{
+    border: .1px solid rgb(189, 185, 185);
+
+}

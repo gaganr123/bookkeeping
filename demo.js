@@ -1,5 +1,6 @@
 let body = document.getElementById("navbar");
 
+// let Xpert = document.querySelector('.Xpert')
 let services = document.getElementById("services");
 let about = document.getElementById("about");
 let pricing = document.getElementById("pricing");
@@ -21,7 +22,7 @@ function changeColor() {
         changeColorto();
     }
     else{
-        Xpert.style.color = "#FFFFFF"
+        // Xpert.style.color = "#FFFFFF"
         services.addEventListener('mouseenter', check1 = () => { services.style.color = "#FFFFFF"});
         services.addEventListener('mouseleave', check2 = () => { services.style.color = "#000000"});
         about.addEventListener('mouseenter', check1 = () => { about.style.color = "#FFFFFF"});
@@ -38,7 +39,7 @@ function changeColor() {
 }
 
 function changeColorto() {
-    // Xpert.style.color = "#EE6600"
+    Xpert.style.color = "#EE6600"
     document.getElementById("navImg").src = "imgs/logo.png";
     document.getElementById("navbar").style.cssText = "backgroundColor: none;"
     services.addEventListener('mouseenter', check1 = () => { services.style.color = "#F15A22"});

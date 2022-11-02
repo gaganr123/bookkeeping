@@ -226,15 +226,17 @@ body, html {
     /* white-space: pre-wrap; */
 }
 
-.testimonial-text p{
+.testimonial-text{
     padding: 0;
+    text-align: justify;
     /* justify-content: center; */
 }
 
-.testimonial-footer, .col-md-8{
-    height: 100%;
-    align-items: center;
-    padding-bottom: 20px;
+.testimonial-footer{
+    /* height: 100%; */
+    /* text-align: center; */
+    align-items: flex-end;
+    padding:0 0 7px 20px;
 }
 .testimonial-pic{
     padding: 0;
@@ -244,12 +246,14 @@ body, html {
     height: 80px;
     width: 80px;
     border-radius: 50%;
+    /* padding-left: 10px; */
 }
 
 .testimonial-pic-desc{
     font-size: 11px;
     margin: 0;
     height: 100%;
+    line-height: 15px;
 }
 
 /*------------------------------------------------------------
@@ -303,7 +307,6 @@ body, html {
 .accordion-button{
     color: rgb(0, 0, 0);
     background-color: white;
-
 }
 
 .accordion-item{
@@ -319,25 +322,34 @@ body, html {
 }
 
 .accordion-button:not(.collapsed) {
+    box-shadow: 0;
+
     border-radius: 0;
     color: rgb(8, 8, 8);
     background-color: white;
     box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 }
 
-.accordion-button:focus {
+/* .accordion-button:focus {
     z-index: 0;
     border-color: none;
     outline: 0;
-}
+} */
 
-.accordion-button{
-    
-}
+.accordion-button:focus {
+    /* z-index: 3; */
+    border-color: white;
+    outline: 0!important;
+    /* I changed the color on this line */
+    /* If you do not want any color, just delete */
+    box-shadow: 0;
+ }
 
-
-
-
+/* 
+ .collapsed::after{
+    width: 15px;
+    height: 15px;
+ } */
 .footer{
     height:80vh;
     width: auto;

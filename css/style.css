@@ -289,6 +289,12 @@ body, html {
     box-shadow: 0;
  }
 
+ /* .accordion-button::after{
+    font-size: small;
+    height: 15px;
+    width: 15px;
+ } */
+
 .footer{
     height:80vh;
     width: auto;

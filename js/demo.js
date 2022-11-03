@@ -4,7 +4,6 @@ let body = document.getElementById("navbar");
 let services = document.getElementById("services");
 let about = document.getElementById("about");
 let pricing = document.getElementById("pricing");
-let partnership = document.getElementById("partnership");
 let contact = document.getElementById("contact");
 let blog = document.getElementById("blog");
 
@@ -29,8 +28,6 @@ function changeColor() {
         about.addEventListener('mouseleave', check2 = () => { about.style.color = "#000000"});
         pricing.addEventListener('mouseenter', check1 = () => { pricing.style.color = "#FFFFFF"});
         pricing.addEventListener('mouseleave', check2 = () => { pricing.style.color = "#000000"});
-        partnership.addEventListener('mouseenter', check1 = () => { partnership.style.color = "#FFFFFF"});
-        partnership.addEventListener('mouseleave', check2 = () => { partnership.style.color = "#000000"});
         contact.addEventListener('mouseenter', check1 = () => { contact.style.color = "#FFFFFF"});
         contact.addEventListener('mouseleave', check2 = () => { contact.style.color = "#000000"});
         blog.addEventListener('mouseenter', check1 = () => { blog.style.color = "#FFFFFF"});
@@ -48,8 +45,6 @@ function changeColorto() {
     about.addEventListener('mouseleave', check2 = () => { about.style.color = "#000000"});
     pricing.addEventListener('mouseenter', check1 = () => { pricing.style.color = "#F15A22"});
     pricing.addEventListener('mouseleave', check2 = () => { pricing.style.color = "#000000"});
-    partnership.addEventListener('mouseenter', check1 = () => { partnership.style.color = "#F15A22"});
-    partnership.addEventListener('mouseleave', check2 = () => { partnership.style.color = "#000000"});
     contact.addEventListener('mouseenter', check1 = () => { contact.style.color = "#F15A22"});
     contact.addEventListener('mouseleave', check2 = () => { contact.style.color = "#000000"});
     blog.addEventListener('mouseenter', check1 = () => { blog.style.color = "#F15A22"});

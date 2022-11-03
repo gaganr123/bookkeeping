@@ -46,6 +46,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.myHeader-pricing{
+    height: auto !important;
+}
 .myHeader-home{
     background-image: url(/imgs/bookkeeping.png);
 }
@@ -298,7 +302,7 @@ body, html {
 .footer{
     height:80vh;
     width: auto;
-    background-image: url(imgs/footer.png);
+    background-image: url(/imgs/footer.png);
     background-repeat: no-repeat;
     background-size: cover;
 }

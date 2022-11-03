@@ -1,0 +1,42 @@
+
+/* 
+font-color: rgb(73, 80, 87);
+color: rgb(241, 95, 34);
+background-color:  rgb(248, 246, 244);
+
+name rows according to content for your easiness
+Here, i have named rows as followings:
+zero:
+one ->
+two ->
+three ->
+ 
+*/
+.bookkeeping{
+    background-color:  rgb(248, 246, 244);
+
+}
+.bookkeeping .row{
+    height: 80vh;
+    border: .1px solid rgb(189, 185, 185);
+    align-content: center;
+
+}
+
+.bookkeeping .row .col-md-6, functionalities .row .col-md-6{
+    border: .1px solid rgb(189, 185, 185);
+    align-content: center;
+}
+
+.one{
+}
+
+.two{
+}
+
+.bookkeeping .card{
+    border: none;
+    text-align: center;
+    background-color:  rgb(248, 246, 244);
+
+}

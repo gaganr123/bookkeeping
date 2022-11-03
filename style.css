@@ -1,10 +1,10 @@
 
 /* 
-bg: rgb(248, 246, 244);
-color: rgb(73, 80, 87);
+font-color: rgb(73, 80, 87);
+color: rgb(241, 95, 34);
+background-color:  rgb(248, 246, 244);
 */
 *{
-    /* color: rgb(73, 80, 87); */
     margin: 0;
     padding: 0;
     font-weight:500;
@@ -21,7 +21,6 @@ h2{
 
 h3{
     font-size: 20px;
-    font-family: LLCircularWeb;
 }
 
 p{
@@ -48,10 +47,16 @@ body {
     background-size: cover;
 }
 .myHeader-home{
-    background-image: url(imgs/bookkeeping.png);
+    background-image: url(/imgs/bookkeeping.png);
 }
 .myHeader-bookkeeping{
-    background-image: url(imgs/bgbookkeeping.png);
+    background-image: url(/imgs/bookkeepingbg.png);
+}
+.myHeader-cloudaccounting{
+    background-image: url(imgs/cloudbasedaccountingbg.png);
+}
+.myHeader-payroll{
+    background-image: url(imgs/payrollbg.png);
 }
 
 .dropdown-item{
@@ -59,14 +64,10 @@ body {
     font-size: large;
 }
 
-
 @media (max-width: 320px) {
     .navbar{
         background-color: rgb(241, 95, 34);
     }
-
-
-
 }
 
 /* for the content in main page */
@@ -79,8 +80,6 @@ body {
 .myHeader .nav-item .nav-link{
     color: rgb(0, 3, 3);
     margin: 0 0.5rem;
-    /* margin-bottom: 1px; */
-    /* border-bottom: 2px invisible; */
 }
 
 .dropdown-menu .dropdown-item{
@@ -95,7 +94,6 @@ body {
 /* navbar hover effect to change color and border  */
 .nav-item .nav-link:hover {
     color: rgb(241, 95, 34) ;
-    /* border-bottom: solid 2px rgb(241, 95, 34); */
 }
 
 body, html {
@@ -109,10 +107,8 @@ body, html {
 }
 
 .afternav{
-    /* height: 100%; */
     display: flex;
 	align-items: flex-end;
-    /* background-color: rgb(253, 126, 20); */
 }
 .afternav p{
     font-size: 18px;
@@ -133,7 +129,7 @@ body, html {
 
 
 /*--------------------------------------------------------------
-# Certification section
+******************** Certification section
 --------------------------------------------------------------*/
 .certification{
     margin: 40px 10px;
@@ -143,7 +139,7 @@ body, html {
 
 
 /*--------------------------------------------------------------
-# Booking-services section
+******************** Booking-services section
 --------------------------------------------------------------*/
 .services{
     background-color: rgb(248, 246, 244);
@@ -168,20 +164,9 @@ body, html {
     display: flex;
     justify-content: center;
 }
-/* 
-#service2{
-
-    border-top-width: 0px;
-    border-bottom-width: 0;
-    border-style: solid;
-    border-left-color: black;
-    border-left-width: 1px;
-    border-right-color: black;
-    border-right-width: 1px;
-} */
 
 /*--------------------------------------------------------------
-# Booking section
+******************** Booking section
 --------------------------------------------------------------*/
 .booking{
     font-size:26px;
@@ -190,7 +175,6 @@ body, html {
 
 }
 .booking-header{
-    /* text-align: center; */
     margin-bottom: 30px;
 }
 
@@ -204,15 +188,8 @@ body, html {
     height: 50vh;
     width: auto;
 }
-
-
-
-
-
-
-
 /*--------------------------------------------------------------
-# Testimonials
+******************** Testimonials
 --------------------------------------------------------------*/
 
 .testimonial-text, .testimonial-footer{
@@ -223,18 +200,14 @@ body, html {
     position: relative;
     text-align: align;
     padding: 0;
-    /* white-space: pre-wrap; */
 }
 
 .testimonial-text{
     padding: 0;
     text-align: justify;
-    /* justify-content: center; */
 }
 
 .testimonial-footer{
-    /* height: 100%; */
-    /* text-align: center; */
     align-items: flex-end;
     padding:0 0 7px 20px;
 }
@@ -246,7 +219,6 @@ body, html {
     height: 80px;
     width: 80px;
     border-radius: 50%;
-    /* padding-left: 10px; */
 }
 
 .testimonial-pic-desc{
@@ -257,13 +229,8 @@ body, html {
 }
 
 /*------------------------------------------------------------
-# Features
+******************** Features
 --------------------------------------------------------------*/
-    @media only screen and (max-width > 768px) {
-     
-    }
-
-
     .features{
         background-color:  rgb(248, 246, 244);
         padding: 10px;
@@ -297,59 +264,31 @@ body, html {
     text-align: center;;
 }
 
-.FAQs{
-    /* color: rgb(73, 80, 87); */
-}
-
-.accordion-item{
-    /* margin-bottom: 5px; */
-}
 .accordion-button{
     color: rgb(0, 0, 0);
     background-color: white;
 }
 
 .accordion-item{
-    /* background-color: rgb(248, 246, 244); */
-    /* font-size: 16px; */
-    /* color: rgb(253, 126, 20); */
-    /* padding: 10px; */
     line-height: 1.8;
     background-color: rgb(248, 246, 244);
-
     border: solid rgb(248, 246, 244) 1px;
-    
 }
 
 .accordion-button:not(.collapsed) {
     box-shadow: 0;
-
     border-radius: 0;
     color: rgb(8, 8, 8);
     background-color: white;
     box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 }
 
-/* .accordion-button:focus {
-    z-index: 0;
-    border-color: none;
-    outline: 0;
-} */
-
 .accordion-button:focus {
-    /* z-index: 3; */
     border-color: white;
     outline: 0!important;
-    /* I changed the color on this line */
-    /* If you do not want any color, just delete */
     box-shadow: 0;
  }
 
-/* 
- .collapsed::after{
-    width: 15px;
-    height: 15px;
- } */
 .footer{
     height:80vh;
     width: auto;
@@ -359,7 +298,6 @@ body, html {
 }
 
 .footer a{
-    /* color: white !important; */
     text-decoration: none;
     font-size: 12px;
     line-height: 12pt;

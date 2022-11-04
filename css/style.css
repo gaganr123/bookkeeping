@@ -50,40 +50,41 @@ body {
 
 
 .myHeader-home{
-    background-image: url( imgs/bookkeeping.png);
+    /* background-image: url( /imgs/bookkeeping.png); */
+    background-image: url("/imgs/bookkeeping.png");
 }
 
 
 .myHeader-backlog{
-    background-image: url(imgs/backlogaccountingbg.png);
+    background-image: url(/imgs/backlogaccountingbg.png);
 }
 
 .myHeader-bookkeeping{
-    background-image: url(imgs/bookkeepingbg.png);
+    background-image: url(/imgs/bookkeepingbg.png);
 }
 
 
 .myHeader-cashflow{
-    background-image: url(imgs/cashflowbg.png);
+    background-image: url(/imgs/cashflowbg.png);
 }
 
 .myHeader-cloudaccounting{
-    background-image: url(imgs/cloudbasedaccountingbg.png);
+    background-image: url(/imgs/cloudbasedaccountingbg.png);
 }
 .myHeader-financing{
-    background-image: url(imgs/monthlyfinancialreportingbg.png);
+    background-image: url(/imgs/monthlyfinancialreportingbg.png);
 }
 .myHeader-payable{
-    background-image: url(imgs/accountspayablebg.png);
+    background-image: url(/imgs/accountspayablebg.png);
 }
 .myHeader-payroll{
-    background-image: url(imgs/payrollbg.png);
+    background-image: url(/imgs/payrollbg.png);
 }
 .myHeader-receivable{
-    background-image: url(imgs/accountsreceivablebg.png);
+    background-image: url(/imgs/accountsreceivablebg.png);
 }
 .myHeader-reconcilliations{
-    background-image: url(imgs/reconciliationsbg.png);
+    background-image: url(/imgs/reconciliationsbg.png);
 }
 .myHeader-pricing{
     height: 10vh !important;
@@ -346,7 +347,7 @@ body, html {
 .footer{
     height:80vh;
     width: auto;
-    background-image: url(imgs/footer.png);
+    background-image: url(/imgs/footer.png);
     background-repeat: no-repeat;
     background-size: cover;
 }

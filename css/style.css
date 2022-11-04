@@ -40,6 +40,7 @@ body {
 .Xpert{
     color: rgb(241, 95, 34);
 }
+
 .myHeader{
     height: 110vh;
     width: auto;
@@ -47,20 +48,48 @@ body {
     background-size: cover;
 }
 
-.myHeader-pricing{
-    height: auto !important;
-}
+
 .myHeader-home{
     background-image: url(/imgs/bookkeeping.png);
 }
+
+
+.myHeader-backlog{
+    background-image: url(/imgs/backlogaccountingbg.png);
+}
+
 .myHeader-bookkeeping{
     background-image: url(/imgs/bookkeepingbg.png);
 }
+
+
+.myHeader-cashflow{
+    background-image: url(/imgs/cashflowbg.png);
+}
+
 .myHeader-cloudaccounting{
-    background-image: url(imgs/cloudbasedaccountingbg.png);
+    background-image: url(/imgs/cloudbasedaccountingbg.png);
+}
+.myHeader-financing{
+    background-image: url(/imgs/monthlyfinancialreportingbg.png);
+}
+.myHeader-payable{
+    background-image: url(/imgs/accountspayablebg.png);
 }
 .myHeader-payroll{
-    background-image: url(imgs/payrollbg.png);
+    background-image: url(/imgs/payrollbg.png);
+}
+
+.myHeader-receivable{
+    background-image: url(/imgs/accountsreceivablebg.png);
+}
+
+.myHeader-reconcilliations{
+    background-image: url(/imgs/reconciliationsbg.png);
+}
+
+.myHeader-pricing{
+    height: 10vh !important;
 }
 
 .dropdown-item{
@@ -250,13 +279,13 @@ body, html {
     .features h5{
         margin-top: 10px;
     }
-    .features .card{
+     .card{
         border: none;
+        text-align: center;
     }
     
     .features .card-body{
         background-color:  rgb(248, 246, 244);
-        text-align: center;
         padding: 0px 30px;
     }
 

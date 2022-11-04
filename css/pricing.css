@@ -1,0 +1,42 @@
+.pricing-card{
+    background-color: rgb(251, 248, 240);
+    border: 1px solid rgb(10, 10, 10);
+}
+
+.row-two{
+    background-color: antiquewhite;
+}
+
+.row-three{
+    background-color: rgb(246, 243, 241);
+}
+
+.one-col{
+    height: 100vh;
+    /* display: flex;
+    flex-wrap: wrap; */
+    align-content: center;
+}
+.list-group{
+    margin: 10px 10px 0;
+}
+.list-group-item{
+    border: none;
+    padding: 8px 0px;
+}
+small{
+    font-size: 12px;
+}
+
+
+
+
+
+
+.row-three{
+    height: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+}

@@ -14,7 +14,7 @@ window.onscroll = function () {
 
 function changeColor() {
     document.getElementById("navbar").style.backgroundColor = "#E4812F";
-    document.getElementById("navImg").src = "../imgs/changeimg.png";
+    document.getElementById("navImg").src = "imgs/changeimg.png";
 
 
     if (window.scrollY == 0) {
@@ -37,7 +37,7 @@ function changeColor() {
 
 function changeColorto() {
     // Xpert.style.color = "#EE6600"
-    document.getElementById("navImg").src = "../imgs/logo.png";
+    document.getElementById("navImg").src = "imgs/logo.png";
     document.getElementById("navbar").style.cssText = "backgroundColor: none;"
     services.addEventListener('mouseenter', check1 = () => { services.style.color = "#F15A22"});
     services.addEventListener('mouseleave', check2 = () => { services.style.color = "#000000"});

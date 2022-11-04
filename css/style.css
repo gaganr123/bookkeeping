@@ -79,15 +79,12 @@ body {
 .myHeader-payroll{
     background-image: url(/imgs/payrollbg.png);
 }
-
 .myHeader-receivable{
     background-image: url(/imgs/accountsreceivablebg.png);
 }
-
 .myHeader-reconcilliations{
     background-image: url(/imgs/reconciliationsbg.png);
 }
-
 .myHeader-pricing{
     height: 10vh !important;
 }
@@ -137,6 +134,24 @@ body, html {
 .description, .d-row{
     align-content: center;
     height: 100%;
+}
+
+ /* Makes the animation pause on hover */
+ .moving-text:hover{
+    animation-play-state: paused;
+}
+
+/* The animation */
+@keyframes marquee{
+    0%{transform: translateX(10%);}
+    10%{transform: translateX(20%);}
+}
+
+/* media query to enable animation for only those who want it */
+@media (prefers-reduced-motion: no-preference) {
+    .moving-text{
+        animation: marquee 5s linear infinite;
+    }
 }
 
 .afternav{
